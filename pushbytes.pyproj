@@ -28,20 +28,31 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="pushbytes\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pushbytes\db.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pushbytes\models\user.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="pushbytes\__init__.py" />
     <Compile Include="pushbytes\views.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="pushbytes\" />
+    <Folder Include="pushbytes\models\" />
     <Folder Include="pushbytes\static\" />
     <Folder Include="pushbytes\static\css\" />
     <Folder Include="pushbytes\static\css\bootstrap\" />
     <Folder Include="pushbytes\static\js\" />
     <Folder Include="pushbytes\templates\" />
+    <Folder Include="pushbytes\templates\admin\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="libman.json" />
+    <Content Include=".gitignore" />
     <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.css" />
     <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.css.map" />
     <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.min.css" />
@@ -76,6 +87,9 @@
     <Content Include="pushbytes\static\css\bootstrap\bootstrap.rtl.min.css.map" />
     <Content Include="pushbytes\static\css\header.css" />
     <Content Include="pushbytes\static\css\sticky-footer.css" />
+    <Content Include="pushbytes\templates\admin\index.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="requirements.txt" />
     <Content Include="pushbytes\templates\index.html" />
     <Content Include="pushbytes\templates\layout.html" />
