@@ -28,10 +28,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="pushbytes\config.py">
+    <Compile Include="pushbytes\auth.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="pushbytes\db.py">
+    <Compile Include="pushbytes\login_manager.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="pushbytes\models\user.py">
@@ -46,50 +46,15 @@
     <Folder Include="pushbytes\models\" />
     <Folder Include="pushbytes\static\" />
     <Folder Include="pushbytes\static\css\" />
-    <Folder Include="pushbytes\static\css\bootstrap\" />
     <Folder Include="pushbytes\static\js\" />
     <Folder Include="pushbytes\templates\" />
-    <Folder Include="pushbytes\templates\admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.min.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.min.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.rtl.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.rtl.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.rtl.min.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-grid.rtl.min.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-reboot.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-reboot.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-reboot.min.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-reboot.min.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-reboot.rtl.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-reboot.rtl.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-reboot.rtl.min.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-reboot.rtl.min.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-utilities.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-utilities.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-utilities.min.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-utilities.min.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-utilities.rtl.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-utilities.rtl.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-utilities.rtl.min.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap-utilities.rtl.min.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap.min.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap.min.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap.rtl.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap.rtl.css.map" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap.rtl.min.css" />
-    <Content Include="pushbytes\static\css\bootstrap\bootstrap.rtl.min.css.map" />
     <Content Include="pushbytes\static\css\header.css" />
     <Content Include="pushbytes\static\css\sticky-footer.css" />
-    <Content Include="pushbytes\templates\admin\index.html">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="pushbytes\templates\signup.html" />
+    <Content Include="pushbytes\templates\login.html" />
     <Content Include="requirements.txt" />
     <Content Include="pushbytes\templates\index.html" />
     <Content Include="pushbytes\templates\layout.html" />
