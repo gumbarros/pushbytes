@@ -46,7 +46,6 @@
     <Folder Include="pushbytes\models\" />
     <Folder Include="pushbytes\static\" />
     <Folder Include="pushbytes\static\css\" />
-    <Folder Include="pushbytes\static\js\" />
     <Folder Include="pushbytes\templates\" />
   </ItemGroup>
   <ItemGroup>
