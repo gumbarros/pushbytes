@@ -28,12 +28,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="pushbytes\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pushbytes\auth.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="pushbytes\login_manager.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="pushbytes\models\publisher.py" />
     <Compile Include="pushbytes\models\user.py">
       <SubType>Code</SubType>
     </Compile>
@@ -53,9 +57,8 @@
     <Content Include="pushbytes\static\css\header.css" />
     <Content Include="pushbytes\static\css\sticky-footer.css" />
     <Content Include="pushbytes\templates\signup.html" />
-    <Content Include="pushbytes\templates\login.html" />
-    <Content Include="requirements.txt" />
     <Content Include="pushbytes\templates\index.html" />
+    <Content Include="requirements.txt" />
     <Content Include="pushbytes\templates\layout.html" />
   </ItemGroup>
   <ItemGroup>

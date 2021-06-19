@@ -4,8 +4,6 @@ Execução do servidor
 
 from os import environ
 from pushbytes import app
-from pushbytes import db
-from pushbytes.models.user import User
 
 if __name__ == '__main__':
 
@@ -16,3 +14,4 @@ if __name__ == '__main__':
         PORT = 5555
 
     app.run(HOST, PORT)
+

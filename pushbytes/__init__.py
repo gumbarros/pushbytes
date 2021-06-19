@@ -18,5 +18,6 @@ app.register_blueprint(Blueprint('main', __name__))
 
 db.init_app(app)
 
+import pushbytes.admin
 import pushbytes.login_manager
 import pushbytes.views

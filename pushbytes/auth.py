@@ -2,7 +2,6 @@
 Rotas relacionados a autenticação de usuários
 """
 
-
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 from pushbytes.models.user import User
@@ -14,8 +13,9 @@ auth = Blueprint('auth', __name__)
 
 @auth.route('/login')
 def login():
+    db.create_all()
     return render_template(
-        'login.html',
+        'index.html',
         title='Login',
         year=datetime.now().year,
         user=current_user
@@ -34,7 +34,7 @@ def login_post():
         return redirect(url_for('auth.login'))
 
     login_user(user, remember=remember)
-    return redirect(url_for('home'))
+    return redirect(url_for('admin.index'))
 
 
 
