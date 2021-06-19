@@ -13,7 +13,6 @@ auth = Blueprint('auth', __name__)
 
 @auth.route('/login')
 def login():
-    db.create_all()
     return render_template(
         'index.html',
         title='Login',

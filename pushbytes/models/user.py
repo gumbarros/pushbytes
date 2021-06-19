@@ -9,6 +9,7 @@ class User(db.Model):
     name = db.Column(db.String(150),nullable=False)
     email = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(150))
+    orders = db.relationship('Order', backref='user', lazy=True)
 
     def is_anonymous(self):
         return False
@@ -21,3 +22,6 @@ class User(db.Model):
 
     def is_active(self):
         return True
+
+    def __str__(self):
+        return self.name

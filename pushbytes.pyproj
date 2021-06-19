@@ -37,6 +37,12 @@
     <Compile Include="pushbytes\login_manager.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="pushbytes\models\game.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pushbytes\models\order.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pushbytes\models\publisher.py" />
     <Compile Include="pushbytes\models\user.py">
       <SubType>Code</SubType>
