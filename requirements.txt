@@ -2,3 +2,4 @@ Flask~=2.0.1
 Flask-Login
 SQLAlchemy
 Flask-Admin
+flask_sqlalchemy
